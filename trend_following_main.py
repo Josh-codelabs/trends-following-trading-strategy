@@ -1,6 +1,11 @@
 # Main entry point for trend following strategy
 
 import sys
+import os
+
+# Add the project root directory to the Python path
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from utils.logo import print_logo
 from utils.logger import setup_logger
 from config.loader import get_str
